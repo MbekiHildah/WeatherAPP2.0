@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER APP 2.0</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="📍 Celbridge, Ireland"
+            required
+            class="search-form"
+          />
+        </form>
+      </header>
+      <div class="main">
+        <div class="weather-temperature">
+          <div class="weather-app-icon" id="icon">🌧</div>
+          <span class="weather-app-value" id="temperature">12</span>
+          <span class="weather-app-unit">°C</span>
+        </div>
+        <div class="weather-details-description">
+          <div id="description" class="description">Rainy Day</div>
+        </div>
+        <div class="weather-description-details">
+          Expect a rainy day with temperatures reaching a maximum of 16°C.
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            Humidity
+            <div class="value"><strong id="humidity">84%</strong></div>
+          </div>
+          <div class="wind">
+            Wind
+            <div class="value"><strong id="wind">3.5km/h</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="hourly-forecast">
+        <div class="hourly-forecast-container">
+          <div class="time">17:00</div>
+          <span class="hourly-forecast-temperature">14</span>
+          <span class="hourly-forecast-temperature-unit">°C</span>
+          <div class="hourly-forecast-widget">🌩</div>
+        </div>
+        <div class="weekly-forecast">
+          <div class="weekly-forecast-container">
+            <div class="day">Monday</div>
+            <span class="weekly-forecast-temperature">10</span>
+            <span class="weekly-forecast-unit">°C</span>
+            <div class="weekly-forecast-widget">🌦</div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/MbekiHildah" target="blank">
+          Mbeki Hildah</a
+        >
+        and is on
+        <a href="https://github.com/MbekiHildah/Weather.git" target="blank"
+          >Git Hub</a
+        >
+        Hosted on
+        <a href="weather-app-mbeki.netlify.app" target="blank"> Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
