@@ -6,6 +6,9 @@
     <title>WEATHER APP 2.0</title>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -28,15 +31,12 @@
       </header>
       <div class="main">
         <div class="weather-temperature">
-          <div class="weather-app-icon" id="icon">⛈</div>
-          <span class="weather-app-value" id="temperature">12</span>
+          <div class="weather-app-icon" id="icon"></div>
+          <span class="weather-app-value" id="temperature"></span>
           <span class="weather-app-unit">°C</span>
         </div>
         <div class="weather-details-description">
           <div id="description" class="description">Rainy Day</div>
-        </div>
-        <div class="weather-description-details">
-          <span id="time"></span>
         </div>
         <div class="weather-details">
           <div class="humidity">
@@ -51,19 +51,13 @@
       </div>
       <div class="hourly-forecast">
         <div class="hourly-forecast-container">
-          <div class="time">17:00</div>
-          <span class="hourly-forecast-temperature">14</span>
-          <span class="hourly-forecast-temperature-unit">°C</span>
-          <div class="hourly-forecast-widget">🌩</div>
+          <div class="weather-description-details">
+          <span id="time"></span>
         </div>
-        <div class="weekly-forecast" id="forecast-container">
-          <div class="weekly-forecast-container">
-            <div class="day">${formatDay(day.time)}</div>
-            <div class="weekly-forecast-temperature">${Math.round(
-              day.temperature
-            )}° </div>
-            <img src="${day.condition.icon_url}" class="forecast-widget" />
-        </div>`;
+        </div>
+        <div class="weekly-forecast" id="forecast">
+           </div>
+        </div>
           </div>
         </div>
       </div>
