@@ -4,15 +4,28 @@ body {
   background-repeat: no-repeat;
   filter: brightness(0.9);
 }
+a {
+  color: hsl(170, 100%, 50%);
+  text-decoration: none;
+}
 .container {
   position: relative;
   display: flex;
   max-width: 800px;
   height: 600px;
   margin: 40px auto;
+  border: 0.5px solid;
   border-radius: 15px;
   padding: 30px;
-  background-color: hwb(192 98% 0% / 0.218);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 250, 68, 0.132) -1.7%,
+    rgba(2, 238, 250, 0.159) 21.1%,
+    rgba(172, 8, 237, 0.179) 46%,
+    rgba(237, 8, 119, 0.125) 64.2%,
+    rgba(237, 8, 119, 0.137) 81%,
+    rgba(248, 136, 0, 0.207) 97.2%
+  );
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -54,27 +67,33 @@ header {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
+  color: azure;
 }
 .weather-app-icon {
   font-size: 88px;
 }
 .weather-app-unit {
   margin-top: 6px;
-  font-size: 28px;
+  font-size: 48px;
+  color: azure;
 }
 .weather-details-description {
   margin-top: 10px;
   font-size: 35px;
+  color: azure;
 }
 .weather-description-details {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 25px;
+  color: azure;
 }
 .weather-details {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
+  color: azure;
 }
 .humidity {
   width: 100px;
@@ -108,6 +127,7 @@ header {
 }
 .hourly-forecast-container {
   margin-top: 30px;
+  color: azure;
 }
 .weekly-forecast {
   width: 520px;
@@ -121,18 +141,15 @@ header {
 }
 .weekly-forecast-container {
   margin-top: 30px;
+  color: azure;
 }
 footer {
   margin-top: 500px;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.9);
-}
-footer {
-  margin-top: 20px;
-  margin-left: 350px;
+  margin-left: 550px;
   padding: 10px 0;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-weight: bolder;
+  color: hsl(0, 0%, 0%);
   position: absolute;
   bottom: 70px;
   width: 100%;

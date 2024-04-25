@@ -28,7 +28,7 @@
       </header>
       <div class="main">
         <div class="weather-temperature">
-          <div class="weather-app-icon" id="icon">🌧</div>
+          <div class="weather-app-icon" id="icon">⛈</div>
           <span class="weather-app-value" id="temperature">12</span>
           <span class="weather-app-unit">°C</span>
         </div>
@@ -36,16 +36,16 @@
           <div id="description" class="description">Rainy Day</div>
         </div>
         <div class="weather-description-details">
-          Expect a rainy day with temperatures reaching a maximum of 16°C.
+          <span id="time"></span>
         </div>
         <div class="weather-details">
           <div class="humidity">
             Humidity
-            <div class="value"><strong id="humidity">84%</strong></div>
+            <div class="value"><strong id="humidity">80%</strong></div>
           </div>
           <div class="wind">
             Wind
-            <div class="value"><strong id="wind">3.5km/h</strong></div>
+            <div class="value"><strong id="wind">2.3km/h</strong></div>
           </div>
         </div>
       </div>
@@ -56,12 +56,14 @@
           <span class="hourly-forecast-temperature-unit">°C</span>
           <div class="hourly-forecast-widget">🌩</div>
         </div>
-        <div class="weekly-forecast">
+        <div class="weekly-forecast" id="forecast-container">
           <div class="weekly-forecast-container">
-            <div class="day">Monday</div>
-            <span class="weekly-forecast-temperature">10</span>
-            <span class="weekly-forecast-unit">°C</span>
-            <div class="weekly-forecast-widget">🌦</div>
+            <div class="day">${formatDay(day.time)}</div>
+            <div class="weekly-forecast-temperature">${Math.round(
+              day.temperature
+            )}° </div>
+            <img src="${day.condition.icon_url}" class="forecast-widget" />
+        </div>`;
           </div>
         </div>
       </div>
